@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(120deg, #a3abb9, #a7aab1);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+}
+
+/* Hover underline animation */
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00f7ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #0072ff;
+    transform: scale(1.1);
+}
+
+
+.container {
+    padding: 60px 60px;
+    text-align: center;
+    color: white;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cardss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 56px;
+    margin-bottom: 200px;
+    
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: 400px;
+    color: white;
+    transition: 0.4s;
+    height: 500px;
+}
+.cardl{
+     background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: 400px;
+    color: white;
+    transition: 0.4s;
+    
+
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255,255,255,0.25);
+}
+
+
+.img-section img {
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+.jobs {
+    list-style: none;
+    padding: 0;
+}
+
+.jobs li {
+    background: rgba(255,255,255,0.2);
+    margin: 10px auto;
+    padding: 15px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.video iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jobs li {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 0%;
+    
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+}
